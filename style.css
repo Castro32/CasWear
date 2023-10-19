@@ -122,7 +122,7 @@ body {
 
 @media screen and (max-width: 768px) {
     #navbar-links {
-        display: none;
+        display: flex;
         flex-direction: column;
         background: #E3E6F3;
         position: absolute;
@@ -168,10 +168,14 @@ body {
 
 #hero h4{
     padding-bottom: 15px;
+    color: #D4D7E8;
 }
 
 #hero h1{
     color: lawngreen;
+}
+#hero p{
+    color: #D4D7E8;
 }
 
 #hero button{
