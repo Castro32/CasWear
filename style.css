@@ -73,6 +73,7 @@ body {
     #menu-toggle {
         display: flex;
     }
+    
 }
 
 #navbar-links {
@@ -121,9 +122,14 @@ body {
 
 
 @media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+      }
     #navbar-links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background: #E3E6F3;
         position: absolute;
         top: 80px;
@@ -155,6 +161,8 @@ body {
 
 #hero{
     background-image: url("images/hero1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -177,7 +185,6 @@ body {
 #hero p{
     color: #D4D7E8;
 }
-
 #hero button{
     background-color: lawngreen;
     padding: 14px 80px 14px 65px;
@@ -301,7 +308,7 @@ body {
     color: #088178;
 }
 
-#product1 .pro .cart{
+#product1 .pro .cart {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -315,7 +322,35 @@ body {
     right: 10px;
 }
 
+#product1 .pro #cart-link {
+    position: relative;
+}
+
+#product1 .pro #remove-from-cart{
+    font-weight: bolder;
+    position: absolute;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: lawngreen;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#product1 .pro #add-to-cart {
+  font-weight: bolder;
+  position: absolute;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: lawngreen;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
 #newsletter{
+    width: auto;
+    height: 400;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -402,3 +437,71 @@ footer .copyright{
 footer .copyright p{
     color: #222;
 }
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
