@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    
 <body>
     <section id="header">
         <a href="#">
@@ -15,15 +14,23 @@
         </a>
         <ul id="navbar-links">
             <li><a class="" href="#hero">Home</a></li>
-            <li><a href="#product1">Shop</a></li>
-            <li><a href="#newsletter">Blog</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-            <li>
-                <a href="cart.html">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span id="cart-count">0</span>
-                </a>
+            <li><a class="" href="#product1">Shop</a></li>
+            <li><a class="" href="#newsletter">Blog</a></li>
+            <li><a class="" href="#contact-section">Contact</a></li>
+            <li><button class="fa fa-comments" class="open-button" onclick="openForm()">Chat</button>
+                <div class="chat-popup" id="myForm">
+                  <form action="https://wa.me/+254114096574/" target="_blank" class="form-container">
+                    <i class="fa fa-whatsapp"></i>
+                
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                
+                    <button type="submit" class="btn" >Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
             </li>
+           
             
         </ul>
     </section>
@@ -33,7 +40,7 @@
         <h2>Super value deals.</h2>
         <h1>On all products.</h1>
         <p>save more with coupons & up to 70% off!</p>
-        <button class="btn">Shop Now !!!<i class="far fa-shopping bag"></i></button></a>
+        <button class="btn" >Shop Now !!!<i class="fa fa-shopping-bag" href="#product1"></i></button></a>
     </section>
 
     <section id="feature" class="section-p1">
@@ -74,11 +81,13 @@
                     </div>
                     <h4>$53</h4>
                 </div>
-                
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
            
-            
             <div class="pro">
                 <img src="images/F2.jpg">
                 <div class="description">
@@ -94,7 +103,11 @@
                     <h4>$65</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
             <div class="pro">
                 <img src="images/Fj.jpg">
@@ -111,7 +124,11 @@
                     <h4>$67</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
             <div class="pro">
                 <img src="images/F5.jpg">
@@ -128,7 +145,11 @@
                     <h4>$78</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
         </div>
     </section>
@@ -152,7 +173,11 @@
                     <h4>$60</h4>
                    
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
             <div class="pro">
                 <img src="images/NA5.jpg">
@@ -169,7 +194,11 @@
                     <h4>$55</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
             <div class="pro">
                 <img src="images/NA3.jpg">
@@ -186,7 +215,11 @@
                     <h4>$70</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
             <div class="pro">
                 <img src="images/NA2.jpg">
@@ -203,15 +236,19 @@
                     <h4>$50</h4>
                     
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cart.html" id="cart-link">
+                    <button id="remove-from-cart">-</button>
+                    <i class="fa fa-shopping-cart"></i>
+                    <button id="add-to-cart">+</button>
+                  </a>
             </div>
         </div>
     </section>
 
-   <section id="newsletter" class="section-p1">
+   <section id="newsletter" section-m1 class="section-p1">
     <div class="newstext">
         <h4>Sign Up For Newsletters</h4>
-        <p>Get E-mail updates about our latest shop and <span>special offers</span>.
+        <p>Get E-mail updates about our latest products and <span>special offers</span>.
         </p>
     </div>
     <div class="form">
@@ -265,13 +302,6 @@
         <p>&copy; 2023 CasWear™</p>
     </div>
    </footer>
-
-   
-   
-    
-    
-
-    
-
+   <script src="script.js"></script>
 </body>
 </html>
