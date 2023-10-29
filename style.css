@@ -37,11 +37,11 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 80px;
+    padding: 40px 40px;
 }
 
 .section-m1 {
-    margin: 40px 0;
+    margin: 40px 40px;
 }
 
 
@@ -73,7 +73,7 @@ body {
     #menu-toggle {
         display: flex;
     }
-    
+   
 }
 
 #navbar-links {
@@ -132,6 +132,8 @@ body {
         flex-direction: row;
         background: #E3E6F3;
         position: absolute;
+        padding: 1px 5px;
+        margin: 5px 5px;
         top: 80px;
         left: 0;
         width: 100%;
@@ -156,6 +158,8 @@ body {
     #header {
         z-index: 999;
     }
+    
+    
 }
 
 
@@ -184,6 +188,9 @@ body {
 }
 #hero p{
     color: #D4D7E8;
+}
+#hero h2{
+    color: #04AA6D;
 }
 #hero button{
     background-color: lawngreen;
@@ -253,7 +260,7 @@ body {
 #product1 .pro-container{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
     flex-wrap: wrap;
 }
 #product1 .pro{
@@ -550,3 +557,4 @@ footer .copyright p{
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
+
