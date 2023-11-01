@@ -70,10 +70,6 @@ body {
     justify-content: center;
 }
 @media screen and (min-width: 769px) {
-    #menu-toggle {
-        display: flex;
-    }
-   
 }
 
 #navbar-links {
@@ -119,54 +115,96 @@ body {
     left: 20px;
 }
 
-
-
 @media screen and (max-width: 768px) {
     #header {
+        display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-      }
+        height: 150px;
+    }
+
     #navbar-links {
-        display: flex;
-        flex-direction: row;
+        display: none;
         background: #E3E6F3;
         position: absolute;
-        padding: 1px 5px;
+        padding: 1px 1px;
         margin: 5px 5px;
-        top: 80px;
-        left: 0;
-        width: 100%;
+        top: 0;
+        left: 10px;
+        width: 50%;
+        height: fit-content;
         text-align: center;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        list-style: none;
     }
 
+    
+    #menu-button {
+        display: block; 
+        cursor: pointer;
+    }
+
+    #menu-button .bar {
+        width: 30px;
+        height: 3px;
+        background: #000;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    
     #navbar-links.active {
-        display: flex; 
-        flex-direction: row;
-    }
-
-    #navbar-links li {
-        padding: 20px;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    #navbar-links li:hover {
-        background-color: #D4D7E8;
-    }
-
-    #header {
-        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
     
+    #close-button {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+    #class-button .close-icon {
+    font-size: 24px;
+    }
+
+    #cart-amount{
+    padding: 5px 5px;
+    top: 2px;
+    right: 5px;
+    position: fixed;
+    z-index: 999;
+    font-size: 18px;
+    }
+
+   #cart-icon {
     
+    top: 10px;
+    right: 30px;
+    position: fixed;
+    z-index: 999;
+    font-size: 30px;
+   }
+   #cart-cont {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   }
 }
-
+#fafa {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   }
 
 #hero{
     background-image: url("images/hero1.webp");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -209,15 +247,16 @@ body {
     flex-wrap: wrap;
 }
 
-#feature .fe-box{
+#feature .fe-box {
     width: 180px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
+    border: 2px solid lawngreen; 
     border-radius: 4px;
-    margin: 15px 0;
+    margin: 10px auto;
 }
+
 
 #feature .fe-box:hover{
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.3);
@@ -298,7 +337,7 @@ body {
 }
 
 #product1 .pro .description h5{
-    paddiing-top: 7px;
+    padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
 }
@@ -444,19 +483,19 @@ footer .copyright{
 footer .copyright p{
     color: #222;
 }
-/* Style for the chat icon */
+
 .fa-whatsapp {
     background-color: greenyellow;
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 999; /* Set a high z-index value */
-    font-size: 70px; /* Increase the font size */
+    z-index: 999; 
+    font-size: 70px; 
     color: green;
     width: 60px;
-    height: 60px; /* Adjust the height to match the width for a circular shape */
-    border: 2px solid green; /* Add a border */
-    border-radius: 50%; /* Make it a perfect circle */
+    height: 60px;
+    border: 2px solid green; 
+    border-radius: 50%; 
 
     animation: blink 3s ease infinite, move 3s ease infinite;
 }
@@ -483,10 +522,10 @@ footer .copyright p{
 }
 
 .open-button i.fa-whatsapp {
-    font-size: 60px; /* Increase the font size of the WhatsApp icon */
+    font-size: 60px; 
 }
 
-/* Style for the chat button */
+
 .open-button {
     background-color: #555;
     color: white;
@@ -497,12 +536,12 @@ footer .copyright p{
     position: fixed;
     bottom: 23px;
     right: 28px;
-    width: auto; /* Change the width to auto to fit the content */
+    width: auto; 
     font-size: 60px;
     
 }
 
-/* The popup chat - hidden by default */
+
 .chat-popup {
     display: none;
     position: fixed;
@@ -510,16 +549,16 @@ footer .copyright p{
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 1000;
-    max-width: 300px; /* Set a maximum width for the chatbox */
+    max-width: 300px;
 }
 
-/* Add styles to the form container */
+
 .form-container {
     padding: 10px;
     background-color: white;
 }
 
-/* Full-width textarea */
+
 .form-container textarea {
     width: 100%;
     padding: 15px;
@@ -530,13 +569,13 @@ footer .copyright p{
     min-height: 200px;
 }
 
-/* When the textarea gets focus, do something */
+
 .form-container textarea:focus {
     background-color: #ddd;
     outline: none;
 }
 
-/* Set a style for the submit/send button */
+
 .form-container .btn {
     background-color: #04AA6D;
     color: white;
@@ -548,12 +587,12 @@ footer .copyright p{
     opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+
 .form-container .cancel {
     background-color: red;
 }
 
-/* Add some hover effects to buttons */
+
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
