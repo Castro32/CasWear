@@ -51,3 +51,28 @@ function openForm() {
         cartAmount.textContent = cartCount.toString();
     
     }
+    document.addEventListener("DOMContentLoaded", function () {
+        var navbar = document.getElementById("navbar-links");
+        var menuButton = document.getElementById("menu-button");
+        var closeButton = document.getElementById("close-button");
+    
+        menuButton.addEventListener("click", function () {
+            navbar.classList.toggle("active");
+            closeButton.style.display = "block";
+        });
+    
+        closeButton.addEventListener("click", function () {
+            navbar.classList.remove("active");
+            closeButton.style.display = "none";
+        });
+    
+        // Close the navbar when a link is clicked
+        var navLinks = navbar.getElementsByTagName("a");
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener("click", function () {
+                navbar.classList.remove("active");
+                closeButton.style.display = "none";
+            });
+        }
+    });
+    
