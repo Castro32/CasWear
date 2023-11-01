@@ -12,23 +12,33 @@
         <a href="#">
             <img src="images/loggo.png" style="width: 100px; height: auto; border: 2px solid #000;" alt="Logo">
         </a>
+        <div id="menu-button"> 
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul id="navbar-links">
             <li><a class="" href="#hero">Home</a></li>
             <li><a class="" href="#product1">Shop</a></li>
-           
             <li><a class="" href="#contact-section">Contact</a></li>
-            <li >
-                <a href="cart.html">
-                    <i class="fa fa-shopping-cart" id="cart-icon"></i>
-                </a>
-                <span id="cart-amount">0</span>
+            <li>
+                <div id="close-button"> 
+                <div class="close-icon">X</div>
+                </div>
+           </li>
+        </ul>
+        <ul>
+           <li id="cart-cont">
+            <a href="">
+                <i class="fa fa-shopping-cart" id="cart-icon"></i>
+            </a>
+            <span id="cart-amount">0</span>
             </li>
-    
-           
-            
         </ul>
     </section>
-    <li><button class="fa fa-whatsapp" class="open-button" onclick="openForm()">Chat</button>
+    
+    
+    <li id="fafa"><button class="fa fa-whatsapp" class="open-button" onclick="openForm()">Chat</button>
         <div class="chat-popup" id="myForm">
           <form action="https://wa.me/+254114096574/" target="_blank" class="form-container">
             <i class="fa fa-whatsapp"></i>
@@ -88,14 +98,14 @@
                     </div>
                     <h4>$53</h4>
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
                         <button class="remove-item" onclick="removeItemFromCart('item-1', 550)" style="background-color: #f44336; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; cursor: pointer;">-</button>
                     </div>
                     
-                    <i class="fa fa-shopping-cart"></i>
+                    <i  href="#cart-icon" class="fa fa-shopping-cart" ></i>
                 </a>
                 
             </div>
@@ -115,7 +125,7 @@
                     <h4>$65</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -140,7 +150,7 @@
                     <h4>$67</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -165,7 +175,7 @@
                     <h4>$78</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -197,7 +207,7 @@
                     <h4>$60</h4>
                    
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -222,7 +232,7 @@
                     <h4>$55</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -247,7 +257,7 @@
                     <h4>$70</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
@@ -272,7 +282,7 @@
                     <h4>$50</h4>
                     
                 </div>
-                <a  id="cart-icon" onclick="toggleCartMenu()">
+                
                     
                     <div id="cart-menu" class="cart-menu">
                         <button class="add-item" onclick="addItemToCart('item-1', 550)" style="background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; margin-right: 10px; cursor: pointer;">+</button>
