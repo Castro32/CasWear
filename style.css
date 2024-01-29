@@ -1,6 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -44,12 +43,16 @@ p {
     margin: 40px 40px;
 }
 
-
+.close-icon{
+    display: nne;
+}
 
 body {
     width: 100%;
 }
-
+#cart-cont{
+    
+}
 
 #header{
     display: flex;
@@ -69,8 +72,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-@media screen and (min-width: 769px) {
-}
+
 
 #navbar-links {
     list-style: none;
@@ -115,7 +117,7 @@ body {
     left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
     #header {
         display: flex;
         flex-direction: column;
@@ -171,7 +173,9 @@ body {
     #class-button .close-icon {
     font-size: 24px;
     }
-
+    #cart-cont{
+        top: auto;
+    }
     #cart-amount{
     padding: 5px 5px;
     top: 2px;
